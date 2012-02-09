@@ -5,23 +5,29 @@
            review="review.source.android.com" />
   <remote  name="mips"
            fetch="git://github.com/MIPS/" />
-  <remote  name="xinzhen"
+  <remote  name="lone"
            fetch="git://github.com/lone-/" />
   <default revision="refs/tags/mips-froyo-r9"
            remote="mips" />
 
-  <project path="build" name="build">
+  <!-- from loongson2f port repositories -->
+
+  <project path="build" name="build" remote="lone" revision="yeeloong-froyo-r0">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="bionic" name="bionic" remote="xinzhen" revision="yeeloong-froyo-r0" />
+  <project path="bionic" name="bionic" remote="lone" revision="yeeloong-froyo-r0" />
+  <project path="dalvik" name="dalvik" remote="lone" revision="yeeloong-froyo-r0" />
+  <project path="frameworks/base" name="frameworks-base" remote="lone" revision="yeeloong-froyo-r0" />
+  <project path="system/core" name="system-core" remote="lone" revision="yeeloong-froyo-r0" />
+  <project path="prebuilt" name="prebuilt" remote="lone" revision="yeeloong-froyo-r0" />
 
+  <!-- from the origin MIPS repositories -->
   <project path="bootable/bootloader/legacy" name="bootable-bootloader-legacy" />
 <!--  <project path="bootable/diskinstaller" name="bootable-diskinstaller" />
   <project path="bootable/recovery" name="bootable-recovery" />
 
   <project path="cts" name="cts" />
-  <project path="dalvik" name="dalvik" />
   <project path="development" name="development" />
 
   <project path="device/common" name="device-common" />
@@ -104,7 +110,6 @@
   <project path="external/yaffs2" name="external-yaffs2" />
   <project path="external/zlib" name="external-zlib" />
 
-  <project path="frameworks/base" name="frameworks-base" />
   <project path="frameworks/ex" name="frameworks-ex" />
   <project path="frameworks/opt/emoji" name="frameworks-opt-emoji" />
   <project path="frameworks/policies/base" name="frameworks-policies-base" />
@@ -166,10 +171,8 @@
   <project path="packages/wallpapers/MagicSmoke" name="packages-wallpapers-MagicSmoke" />
   <project path="packages/wallpapers/MusicVisualization" name="packages-wallpapers-MusicVisualization" />
 
-  <project path="prebuilt" name="prebuilt" />
   <project path="sdk" name="sdk" />
   <project path="system/bluetooth" name="system-bluetooth" />
-  <project path="system/core" name="system-core" />
   <project path="system/extras" name="system-extras" />
   <project path="system/netd" name="system-netd" />
   <project path="system/vold" name="system-vold" />
