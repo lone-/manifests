@@ -24,7 +24,7 @@
 
   <!-- from the origin MIPS repositories -->
   <project path="bootable/bootloader/legacy" name="bootable-bootloader-legacy" />
-<!--  <project path="bootable/diskinstaller" name="bootable-diskinstaller" />
+  <project path="bootable/diskinstaller" name="bootable-diskinstaller" />
   <project path="bootable/recovery" name="bootable-recovery" />
 
   <project path="cts" name="cts" />
@@ -176,6 +176,6 @@
   <project path="system/extras" name="system-extras" />
   <project path="system/netd" name="system-netd" />
   <project path="system/vold" name="system-vold" />
-  <project path="system/wlan/ti" name="system-wlan-ti" />-->
+  <project path="system/wlan/ti" name="system-wlan-ti" />
 
 </manifest>
