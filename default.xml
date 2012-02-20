@@ -12,7 +12,7 @@
 
   <!-- from loongson2f port repositories -->
 
-  <project path="build" name="build" remote="lone" revision="yeeloong-froyo-r0">
+  <project path="build" name="build" remote="lone" revision="yeeloong-froyo-r1">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -20,7 +20,8 @@
   <project path="dalvik" name="dalvik" remote="lone" revision="yeeloong-froyo-r0" />
   <project path="frameworks/base" name="frameworks-base" remote="lone" revision="yeeloong-froyo-r0" />
   <project path="system/core" name="system-core" remote="lone" revision="yeeloong-froyo-r0" />
-  <project path="prebuilt" name="prebuilt" remote="lone" revision="yeeloong-froyo-r0" />
+  <project path="prebuilt" name="prebuilt" remote="lone" revision="yeeloong-froyo-r1" />
+  <project path="frameworks/policies/base" name="frameworks-policies-base" remote="lone" revision="yeeloong-froyo-r1"/>
 
   <!-- from the origin MIPS repositories -->
   <project path="bootable/bootloader/legacy" name="bootable-bootloader-legacy" />
@@ -112,7 +113,6 @@
 
   <project path="frameworks/ex" name="frameworks-ex" />
   <project path="frameworks/opt/emoji" name="frameworks-opt-emoji" />
-  <project path="frameworks/policies/base" name="frameworks-policies-base" />
 
   <project path="hardware/broadcom/wlan" name="hardware-broadcom-wlan" />
   <project path="hardware/libhardware" name="hardware-libhardware" />
